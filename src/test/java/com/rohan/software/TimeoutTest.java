@@ -10,9 +10,7 @@ class TimeoutTest {
     @Test
     public void test1(){
 
-        assertTimeout(Duration.ofMillis(100),() -> {
-            Timeout.sortTimeout();
-        });
+        assertTimeout(Duration.ofMillis(100), Timeout::sortTimeout);
     }
 
 }
